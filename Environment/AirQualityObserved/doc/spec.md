@@ -110,11 +110,11 @@ the structure of such an attribute will be as follows:
   It is recommended that implementations use the same naming conventions as exemplified above (lower case starting words, camel case when compound terms are used)
 + Attribute metadata:
     + `description` : short description of the measurand and its related qualitative level
-      + Type: [Text](https://schema.org/Text)
-      + Optional
+        + Type: [Text](https://schema.org/Text)
+        + Optional
     + `referenceSpecification` : Specification that must be taken as reference when interpreting the supplied qualitative value. 
-      + Type: [Text](https://schema.org/Text) or [URL](https://schema.org/URL)
-      + Mandatory
+        + Type: [Text](https://schema.org/Text) or [URL](https://schema.org/URL)
+        + Mandatory
 
 ### Representing airquality-related weather conditions
 
