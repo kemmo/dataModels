@@ -102,12 +102,13 @@ In order to enable a proper management of the qualitative levels of the differen
 *for each* pollutant (measurand) there might be an attribute which name *MUST* be exactly equal to the concatenation of the
 chemical formula (or mnemonic) of the measurand with the string `_Level`, ex. `CO_Level`. To be more precise, 
 the structure of such an attribute will be as follows:
-  + Attribute name: Equal to the name of the measurand plus the suffix `_Level`, for instance `CO_Level`.
-  + Attribute type: [Text](https://schema.org/Text)
-  + Attribute value: one of (`good`, `moderate`, `unhealthyForSensitiveGroups`, `unhealthy`, `veryUnhealthy`, `hazardous`).
+
++ Attribute name: Equal to the name of the measurand plus the suffix `_Level`, for instance `CO_Level`.
++ Attribute type: [Text](https://schema.org/Text)
++ Attribute value: one of (`good`, `moderate`, `unhealthyForSensitiveGroups`, `unhealthy`, `veryUnhealthy`, `hazardous`).
   As this can be different between countries, regulations or implementations, the set of allowed values will depend on the reference specification used.
   It is recommended that implementations use the same naming conventions as exemplified above (lower case starting words, camel case when compound terms are used)
-  + Attribute metadata:
++ Attribute metadata:
     + `description` : short description of the measurand and its related qualitative level
       + Type: [Text](https://schema.org/Text)
       + Optional
