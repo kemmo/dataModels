@@ -54,8 +54,8 @@ A JSON Schema corresponding to this data model can be found [here](http://fiware
     + Attribute type: [Number](https://schema.org/Number)
     + Attribute metadata:
         + `referenceSpecification` : Specification that must be taken as reference when interpreting or calculating the supplied air quality index.
-        + Type: [Text](https://schema.org/Text) or [URL](https://schema.org/URL
-        + Optional
+            + Type: [Text](https://schema.org/Text) or [URL](https://schema.org/URL)
+            + Optional
     + Optional
   
 + `reliability` : Reliability (percentage, expressed in parts per one) corresponding to the air quality observed.
@@ -76,10 +76,14 @@ A JSON Schema corresponding to this data model can be found [here](http://fiware
 In order to enable a proper management of the the concentrations of the different pollutants,
 *for each* pollutant (measurand) there must be an attribute which name *MUST* be exactly equal the chemical formula (or mnemonic) of the measurand, ex. CO.
 The structure of such an attribute will be as follows:
-+ Attribute name: Equal to the name of the measurand, for instance `CO`.
-+ Attribute type: [Number](https://schema.org/Number)
-+ Attribute value: corresponds to the value for the measurand as a number.
-+ Attribute metadata:
+
+Attribute name: Equal to the name of the measurand, for instance `CO`.
+
+Attribute type: [Number](https://schema.org/Number)
+
+Attribute value: corresponds to the value for the measurand as a number.
+
+Attribute metadata:
     + `timestamp` : optional timestamp for the observed value in ISO8601 format.
         It can be ommitted if the observation time is the same as the one captured by the `dateObserved` attribute at entity level.
         + Type: [DateTime](https://schema.org/DateTime)
@@ -101,6 +105,8 @@ the structure of such an attribute will be as follows:
   + Attribute name: Equal to the name of the measurand plus the suffix `_Level`, for instance `CO_Level`.
   + Attribute type: [Text](https://schema.org/Text)
   + Attribute value: one of (`good`, `moderate`, `unhealthyForSensitiveGroups`, `unhealthy`, `veryUnhealthy`, `hazardous`).
+  As this can be different between countries, regulations or implementations, the set of allowed values will depend on the reference specification used.
+  It is recommended that implementations use the same naming conventions as exemplified above (lower case starting words, camel case when compound terms are used)
   + Attribute metadata:
     + `description` : short description of the measurand and its related qualitative level
       + Type: [Text](https://schema.org/Text)
