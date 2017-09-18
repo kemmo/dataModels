@@ -77,13 +77,13 @@ In order to enable a proper management of the the concentrations of the differen
 *for each* pollutant (measurand) there must be an attribute which name *MUST* be exactly equal the chemical formula (or mnemonic) of the measurand, ex. CO.
 The structure of such an attribute will be as follows:
 
-Attribute name: Equal to the name of the measurand, for instance `CO`.
++ Attribute name: Equal to the name of the measurand, for instance `CO`.
 
-Attribute type: [Number](https://schema.org/Number)
++ Attribute type: [Number](https://schema.org/Number)
 
-Attribute value: corresponds to the value for the measurand as a number.
++ Attribute value: corresponds to the value for the measurand as a number.
 
-Attribute metadata:
++ Attribute metadata:
     + `timestamp` : optional timestamp for the observed value in ISO8601 format.
         It can be ommitted if the observation time is the same as the one captured by the `dateObserved` attribute at entity level.
         + Type: [DateTime](https://schema.org/DateTime)
