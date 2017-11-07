@@ -27,6 +27,10 @@ pages:
       - 'NoiseLevelObserved'     : 'Environment/NoiseLevelObserved/doc/spec.md'
   - 'Indicators':
       - 'KeyPerformanceIndicator' : 'KeyPerformanceIndicator/doc/spec.md'
+  - 'Media':
+      - 'Introduction'            : 'Media/doc/introduction.md'
+      - 'MediaEvent'     	  : 'Media/MediaEvent/doc/spec.md'
+      - 'PlateDetectedEvent'      : 'Media/PlateDetectedEvent/doc/spec.md'
   - 'Parking':
       - 'Introduction'         : 'Parking/doc/introduction.md' 
       - 'OffStreetParking'     : 'Parking/OffStreetParking/doc/spec.md'
