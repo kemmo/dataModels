@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/schema#",
   "id": "https://fiware.github.io/dataModels/Media/MediaEvent/schema.json",
   "title": "FIWARE - Media / Media Event",
-  "description": "Base for all events raised by elements in the Kurento media server",
+  "description": "Base for all events raised by elements in the media server",
   "type": "object",
   "allOf": [
     { "$ref": "https://fiware.github.io/dataModels/common-schema.json#/definitions/GSMA-Commons" },
@@ -21,9 +21,6 @@
         "timestamp": {
           "type": "string",
           "format": "date-time"
-        },
-        "source": {
-          "type": "object"
         },
         "refSeeAlso": {
           "$ref": "https://fiware.github.io/dataModels/common-schema.json#/definitions/EntityIdentifierType"

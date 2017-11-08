@@ -2,7 +2,7 @@
 
 ## Description
 
-Base for all events raised by elements in the Kurento media server
+Base for all events raised by elements in the media server
 
 ## Data Model
 

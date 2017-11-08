@@ -2,34 +2,22 @@
   "$schema": "http://json-schema.org/schema#",
   "id": "https://fiware.github.io/dataModels/Media/PlateDetectedEvent/schema.json",
   "title": "FIWARE - Media / Plate detected Event",
-  "description": "Event raised by a PlateDetectorFilter when a plate is found in the data streamed.",
+  "description":"Event raised by the media server when a plate is found in the video stream.",
   "type": "object",
   "allOf": [
     { "$ref": "https://fiware.github.io/dataModels/common-schema.json#/definitions/GSMA-Commons" },
+    { "$ref": "https://fiware.github.io/dataModels/Media/MediaEvent/schema.json" },
     {
       "properties": {
         "type": {
           "type": "string",
           "enum": [
-            "MediaEvent"
+            "PlateDetectedEvent"
           ],
           "description": "NGSI Entity type"
         },
-        "eventType": {
-          "type": "string"
-        },
         "plate": {
           "type": "string"
-        },
-        "timestamp": {
-          "type": "string",
-          "format": "date-time"
-        },
-        "source": {
-          "type": "object"
-        },
-        "refSeeAlso": {
-          "$ref": "https://fiware.github.io/dataModels/common-schema.json#/definitions/EntityIdentifierType"
         }
       }
     }

@@ -2,7 +2,7 @@
 
 ## Description
 
-Event raised by a `PlateDetectorFilter` when a plate is found in the data streamed.
+Event raised by the media server when a plate is found in the video stream.
 
 ## Data Model
 
